@@ -1,6 +1,56 @@
-Suppose a company is struggling with a series of computer virus attacks for the past several months. The viruses were grouped into a few types with some effort. 
-However, it takes a long time to sort out what kind of virus it is when been hit with. Thus, the goal is to classify the virus as quickly as possible. There is a dataset of the features that may be handy (or not), 
-and  also the associated virus type (target variable). 
+# Machine Learning–Based Virus Classification
 
-The practice involves experimenting with various classification methods and applying best practices such as grid search, cross-validation, and feature selection/extraction techniques. 
-Then, determining the method that yields the best results.
+This repository presents a machine learning study focused on **rapid classification of computer virus types** using structured feature data. The project evaluates multiple classification algorithms and optimization techniques to determine the most effective model for accurate and efficient virus identification.
+
+## Problem Statement
+
+A company has been experiencing repeated computer virus attacks over several months.  
+Although the viruses have been grouped into a few known types, **identifying the virus type after an attack is time-consuming**.
+
+To address this problem, a dataset containing:
+- Extracted system and file features
+- Corresponding virus type labels (target variable)
+
+is used to build a classification system that can **predict the virus type as quickly and accurately as possible**.
+
+## Approach
+
+The project follows standard machine learning best practices by:
+- Experimenting with multiple classification algorithms
+- Evaluating baseline model performance
+- Applying cross-validation for robust evaluation
+- Performing feature selection to reduce dimensionality
+- Using grid search for hyperparameter tuning
+- Testing ensemble learning to combine model predictions
+
+## Models Evaluated
+
+- Decision Tree
+- Random Forest
+- Support Vector Machine (SVM)
+- k-Nearest Neighbors (KNN)
+- Naive Bayes
+- Voting Classifier (Ensemble)
+
+## Optimization Techniques
+
+- k-Fold Cross-Validation
+- Feature Selection
+- Grid Search Hyperparameter Tuning
+- Ensemble Voting
+
+## Key Findings
+
+- Hyperparameter tuning significantly improves model performance
+- Feature selection helps stabilize validation results
+- Random Forest provides the best overall accuracy and robustness
+- Ensemble voting does not outperform the strongest individual model
+
+## Technologies Used
+
+- Python
+- scikit-learn
+- NumPy
+- Pandas
+- Matplotlib
+- Jupyter Notebook
